@@ -1,0 +1,18 @@
+pcws:
+  datalogService:
+    useMock: ${USE_DATALOG_SERVICE_MOCK:false}
+    directory: ${PCWS_DATALOG_DIRECTORY:/datalogDirectory}
+  codeService:
+    useMock: ${USE_CODE_SERVICE_MOCK:false}
+  accountService:
+    useMock: ${USE_ACCOUNT_SERVICE_MOCK:false}
+    url: ${PCWS_ACCOUNT_SERVICE_URL:https://bfh-paketblitz-account-service.herokuapp.com}
+  datasource:
+    jdbc-url: ${PCWS_DATASOURCE_JDBC_URL:jdbc:postgresql://pcws-db:5432/pcws-db}
+    username: ${PCWS_DATASOURCE_USERNAME:pcws-user}
+    password: ${PCWS_DATASOURCE_PASSWORD:pcws-password}
+    driver-class-name: 'org.postgresql.Driver'
+
+
+spring.jpa.properties.hibernate.dialect: 'org.hibernate.dialect.PostgreSQLDialect'
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true

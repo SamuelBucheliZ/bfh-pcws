@@ -2,7 +2,7 @@ package ch.bfh.pcws.api;
 
 
 import ch.bfh.pcws.image.CreateImageService;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,8 +23,8 @@ public class CreateCodeEndpoint {
     }
 
     @CrossOrigin(origins = "*")
-    @PostMapping(value = "/createCode", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    @ApiOperation("createCode")
+    @PostMapping(value = "/createCode", produces = MediaType.APPLICATION_JSON_VALUE)
+    @Operation(summary = "createCode")
     public CodeResponse createCode(@RequestBody CodeRequest codeRequest) {
         return createImageService.handle(codeRequest);
     }

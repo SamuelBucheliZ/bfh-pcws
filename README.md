@@ -2,7 +2,7 @@
 
 Main service for the BFH AppTrans exercise.
 
-Live demo (with mock external systems) at https://bfh-pcws-mock.herokuapp.com/swagger-ui.html
+Live demo (with mock external systems) at https://bfh-pcws-mock.herokuapp.com/swagger-ui/index.html
 
 See also https://github.com/SamuelBucheliZ/bfh-apptrans-exercise/blob/master/README.md
 
@@ -10,7 +10,7 @@ See also https://github.com/SamuelBucheliZ/bfh-apptrans-exercise/blob/master/REA
 
 PC-WS is known to work with the following versions
 
-- Java: 8
+- Java: 11
 - Tomcat: 9
 - PostgreSQL: 10
 

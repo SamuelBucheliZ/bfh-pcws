@@ -18,9 +18,11 @@ PC-WS is known to work with the following versions
 
 The relevant artifacts can be found here https://github.com/SamuelBucheliZ/bfh-pcws/releases/tag/latest-war
 
-1. Set up database using [setup_db.sql](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/v1.0/setup_db.sql).
-2. Set up cronjob to run [transfer_logs.sh](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/v1.0/transfer_logs.sh) every minute.
-3. Deploy [pcws.war](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/v1.0/pcws.war) in Tomcat.
+1. Set up database using [setup_db.sql](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/latest-war/setup_db.sql).
+2. Set up cronjob to run [transfer_logs.sh](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/latest-war/transfer_logs.sh) every minute.
+3. Deploy [pcws.war](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/latest-war/pcws.war) in Tomcat.
+
+Note: PC-WS provides a "mock" configuration (see below) which allows to run it in a demo mode without need for a database or external systems. This can be used to initially test the Tomcat setup, i.e., to directly start with step 3 above.
 
 ## Configuration
 

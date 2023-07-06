@@ -16,7 +16,7 @@ PC-WS is known to work with the following versions
 
 ## Installation
 
-The relevant artifacts can be found here https://github.com/SamuelBucheliZ/bfh-pcws/releases/tag/v1.0
+The relevant artifacts can be found here https://github.com/SamuelBucheliZ/bfh-pcws/releases/tag/latest-war
 
 1. Set up database using [setup_db.sql](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/v1.0/setup_db.sql).
 2. Set up cronjob to run [transfer_logs.sh](https://github.com/SamuelBucheliZ/bfh-pcws/releases/download/v1.0/transfer_logs.sh) every minute.
